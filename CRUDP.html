@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styleCRUDP.css">
+  <title>Mantenimiento</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <h2>Insertar paciente</h2>
+                <form action="" data-action="insertar">
+                    <div class="inputbox">
+                        <input type="text" name="idHotel" required>
+                        <label for="">Cedula</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="Nombre" required>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="inputbox">
+                        <select name="formato" id="formato" required>
+                            <option value="" selected disabled hidden>Seleccionar...</option>
+                            <option value="true">Asegurado</option>
+                            <option value="false">No asegurado</option>
+                        </select>
+                    </div>
+                    <button class="select-button">Insertar</button>
+                </form>
+            </div>
+        </div>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <h2>Actualizar paciente</h2>
+                    <form action=""data-action="actualizar">
+                        <div class="inputbox">
+                            <input type="number" name="idPaciente" required>
+                            <label for="">idPaciente</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="idHotel" required>
+                            <label for="">Cedula</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="Nombre" required>
+                            <label for="">Nombre</label>
+                        </div>
+                        <div class="inputbox">
+                            <select name="formato" id="formato" required>
+                                <option value="" selected disabled hidden>Seleccionar...</option>
+                                <option value="true">Asegurado</option>
+                                <option value="false">No asegurado</option>
+                            </select>
+                        </div>
+                        <button class="select-button">Actualizar</button>
+                    </form>
+                </div>
+            </div>
+            </section>
+            <section>
+                <div class="form-box">
+                    <div class="form-value">
+                        <h2>Eliminar paciente</h2>
+                        <form action=""data-action="eliminar">
+                            <div class="inputbox">
+                                <input type="number" name="idHotel" required>
+                                <label for="">idPaciente</label>
+                            </div>
+                            <button class="select-button">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+        <a id="inicio-button" class="inicio-button" href="presentation.html">Inicio</a>
+        <a id="Medico-button" class="Medico-button" href="Pacientes.html">Pacientes</a>
+        <a id="SlideLeft-button" class="SlideLeft-button" href="CRUDM.html"><</a>
+        <a id="Slide-button" class="Slide-button" href="CRUDH.html">></a>
+        <script src="scriptCRUDP.js"></script>
+    </section>
+</body>
+</html>

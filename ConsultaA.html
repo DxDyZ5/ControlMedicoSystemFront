@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultas</title>
+  <link rel="stylesheet" type="text/css" href="styleConsultaA.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Consultar altas medicas</h1>
+    <form>
+      <div class="section">
+        <div class="form-group">
+            <label for="destino">idPaciente:</label>
+            <input type="text" list="destino-list" id="destino" autocomplete="off">
+            <datalist id="destino-list">
+              <option value="">idPaciente</option>
+            </datalist>
+        </div>
+        <div class="form-group">
+            <label for="origen">Fecha:</label>
+            <input type="date" list="origen-list" id="origen" autocomplete="off">
+            <datalist id="origen-list">
+              <option value="">Fecha</option>
+            </datalist>
+          </div>
+        <div class="form-group">
+          <label for="tipo-filtro">TipoDeFiltro:</label>
+          <input type="text" list="tipo-filtro-list" id="tipo-filtro" autocomplete="off">
+          <datalist id="tipo-filtro-list">
+            <option value="">TipoDeFiltro</option>
+          </datalist>
+        </div>
+        <a class="select-button" href="#">Buscar</a>
+      </div>
+    </form>
+    <a id="inicio-button" class="inicio-button" href="presentation.html">Inicio</a>
+    <a id="SlideLeft-button" class="SlideLeft-button" href="ConsultasI.html"><</a>
+  </div>
+  <script src="scriptConsultaA.js"></script>
+</body>
+</html>

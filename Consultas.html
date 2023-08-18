@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultas</title>
+  <link rel="stylesheet" type="text/css" href="styleConsultaS.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Consultar Paciente</h1>
+    <form>
+      <div class="section">
+        <div class="form-group">
+          <label for="origen">Nombre:</label>
+          <input type="text" list="origen-list" id="origen" autocomplete="off">
+          <datalist id="origen-list">
+            <option value="">Nombre</option>
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="destino">Cedula:</label>
+          <input type="text" list="destino-list" id="destino" autocomplete="off">
+          <datalist id="destino-list">
+            <option value="">Cedula</option>
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="fecha-salida">Asegurado:</label>
+          <select name="formato" id="fecha-salida" required>
+            <option value="" >Seleccionar...</option>
+            <option value="true">Asegurado</option>
+            <option value="false">No asegurado</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tipo-filtro">TipoDeFiltro:</label>
+          <input type="text" list="tipo-filtro-list" id="tipo-filtro" autocomplete="off">
+          <datalist id="tipo-filtro-list">
+            <option value="">TipoDeFiltro</option>
+          </datalist>
+        </div>
+        <a class="select-button" href="#">Buscar</a>
+      </div>
+    </form>
+    <a id="inicio-button" class="inicio-button" href="presentation.html">Inicio</a>
+    <a id="Slide-button" class="Slide-button" href="ConsultaJ.html">></a>
+  </div>
+  <script src="scriptConsultaS.js"></script>
+</body>
+</html>

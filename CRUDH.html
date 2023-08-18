@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styleCrudH.css">
+  <title>Mantenimiento</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <h2>Insertar habitacion</h2>
+                <form action="" data-action="insertar">
+                    <div class="inputbox">
+                        <input type="number" name="idHotel" required>
+                        <label for="">Numero</label>
+                    </div>
+                    <div class="inputbox">
+                        <select name="formato" id="formato" required>
+                            <option value="" selected disabled hidden>Seleccionar tipo...</option>
+                            <option value="Doble">Doble</option>
+                            <option value="Privada">Privada</option>
+                            <option value="Suite">Suite</option>
+                        </select>
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" name="Nombre" required>
+                        <label for="">Precio por dia</label>
+                    </div>
+                    <button class="select-button">Insertar</button>
+                </form>
+            </div>
+        </div>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <h2>Actualizar habitacion</h2>
+                    <form action=""data-action="actualizar">
+                        <div class="inputbox">
+                            <input type="number" name="idHabitacion" required>
+                            <label for="">idHabitacion</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" name="idHotel" required>
+                            <label for="">Numero</label>
+                        </div>
+                        <div class="inputbox">
+                            <select name="formato" id="formato" required>
+                                <option value="" selected disabled hidden>Seleccionar tipo...</option>
+                                <option value="Doble">Doble</option>
+                                <option value="Privada">Privada</option>
+                                <option value="Suite">Suite</option>
+                            </select>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" name="Nombre" required>
+                            <label for="">Precio por dia</label>
+                        </div>
+                        <button class="select-button">Actualizar</button>
+                    </form>
+                </div>
+            </div>
+            </section>
+            <section>
+                <div class="form-box">
+                    <div class="form-value">
+                        <h2>Eliminar habitacion</h2>
+                        <form action=""data-action="eliminar">
+                            <div class="inputbox">
+                                <input type="number" name="idHotel" required>
+                                <label for="">idHabitacion</label>
+                            </div>
+                            <button class="select-button">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+        <a id="inicio-button" class="inicio-button" href="presentation.html">Inicio</a>
+        <a id="Medico-button" class="Medico-button" href="habitaciones.html">Habitaciones</a>
+        <a id="SlideLeft-button" class="SlideLeft-button" href="CRUDP.html"><</a>
+        <script src="scriptCRUDH.js"></script>
+    </section>
+</body>
+</html>
